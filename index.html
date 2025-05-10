@@ -23,6 +23,18 @@
             </div>
         </div>
     </div>
+    <audio id="attackSound" src="./punch.mp3"></audio>
+
+    <script>
+        const attackButton = document.getElementById('attackButton');
+        const attackSound = document.getElementById('attackSound');
+
+        attackButton.addEventListener('click', () => {
+            attackSound.currentTime = 0; // Сброс звука на начало
+            attackSound.play(); // Воспроизвести звук удара
+            alert('Игрок атакует!');
+        });
+    </script>
 </body>
 
 </html>
