@@ -5,18 +5,13 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css" />
     <script type="module" src="./script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
-    <script>
-    var sound = new Howl({
-      src: ['music.mp3'],
-      volume: 0.5,
-      loop: true,
-    });
-</script>
     <title>Mortal Kombat</title>
 </head>
 
 <body>
+    <audio autoplay loop>
+        <source src="./music.mp3" type="audio/mpeg">
+    </audio>
     <div class="wrap">
         <div class="loading">Loading fight...</div>
         <canvas id="canvas"></canvas>
@@ -28,6 +23,7 @@
             <div class="lifebar right">
                 <div class="player-name">Одомашили мнимого</div>
                 <div class="life" id="player2Life"></div>
+                
             </div>
         </div>
     </div>
