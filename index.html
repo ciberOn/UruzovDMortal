@@ -5,6 +5,14 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css" />
     <script type="module" src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
+    <script>
+    var sound = new Howl({
+      src: ['music.mp3'],
+      volume: 0.5,
+      loop: true,
+    });
+</script>
     <title>Mortal Kombat</title>
 </head>
 
@@ -14,11 +22,11 @@
         <canvas id="canvas"></canvas>
         <div class="status-wrap">
             <div class="lifebar left">
-                <div class="player-name">sub-zerosik</div>
+                <div class="player-name">Azzeti</div>
                 <div class="life" id="player1Life"></div>
             </div>
             <div class="lifebar right">
-                <div class="player-name">kanosik</div>
+                <div class="player-name">Одомашили мнимого</div>
                 <div class="life" id="player2Life"></div>
             </div>
         </div>
